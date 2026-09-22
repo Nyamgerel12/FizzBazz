@@ -1,14 +1,16 @@
 public class FizzBuzz{
     public String convert(int number){
-        if(number % 3 == 0 && number % 5 == 0){
-            return "FizzBuzz";
-        }
+        String result = "";
+        
         if(number % 3 == 0){
-            return "Fizz";
+            result += "Fizz";
         } 
         if(number % 5 == 0){
-            return "Buzz";
+            result += "Buzz";
         }  
-        return String.valueOf(number);
+        if(result.isEmpty()){
+            result = String.valueOf(number);
+        }
+        return result;
         }
     }
