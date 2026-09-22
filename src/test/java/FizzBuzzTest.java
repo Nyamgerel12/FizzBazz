@@ -6,5 +6,6 @@ public class FizzBuzzTest {
     void convert_regularNumber_returnsNumberAsString(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("1", fizzBuzz.convert(1));
+        
     }
 }
