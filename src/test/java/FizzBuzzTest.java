@@ -13,4 +13,9 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.convert(3));
     }
+    @Test 
+    void convert_multipleOfFive_returnsBuzz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzBuzz.convert(5));
+    }
 }
